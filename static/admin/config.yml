@@ -10,9 +10,10 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: 'index'
+    path: '{{title}}/{{slug}}'
     editor:
-     preview: false
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
